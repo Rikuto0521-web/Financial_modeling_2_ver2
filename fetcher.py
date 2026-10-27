@@ -29,8 +29,8 @@ def fetch_financial_data(ticker_symbol):
       )
       base_ppe = (
           float(
-              bs.loc["Gross PPE"].iloc[0]
-              if "Gross PPE" in bs.index
+              bs.loc["Net PPE"].iloc[0]
+              if "Net PPE" in bs.index
               else 5000000000
           )
           / 1e6
